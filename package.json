@@ -15,9 +15,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "xo",
-    "build": "gulp dist",
-    "release:cws": "cd build && chrome-webstore-upload upload --auto-publish",
-    "release": "npm run build && npm run release:cws"
+    "zip": "mkdir -p dist && cd src && zip -r ../dist/extension.zip ."
   },
   "devDependencies": {
     "chrome-webstore-upload-cli": "^2.2",
